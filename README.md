@@ -1,3 +1,5 @@
+# [TESTING: NOTE YET AVAILABLE TO CHAPTERS]
+
 # English (Scroll down for French)
 <!--## This content is featured in a monthly theme!
 

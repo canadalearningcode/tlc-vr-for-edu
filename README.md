@@ -1,7 +1,7 @@
-# [TESTING: NOTE YET AVAILABLE TO CHAPTERS]
+## [TESTING: NOTE YET AVAILABLE TO CHAPTERS]
 
-# English (Scroll down for French)
-<!--## This content is featured in a monthly theme!
+<!--# English (Scroll down for French)
+## This content is featured in a monthly theme!
 
 In 2019, we want to challenge Canadians to pause and think, learn about, share, and work towards solving issues that affect us all on a global scale – while leveraging the power of technology!  More information on monthly themes [here](https://www.canadalearningcode.ca/code-can-change-the-world/)
 

@@ -1,14 +1,12 @@
-## [TESTING: NOTE YET AVAILABLE TO CHAPTERS]
-
-<!--# English (Scroll down for French)
+# English (Scroll down for French)
 ## This content is featured in a monthly theme!
 
 In 2019, we want to challenge Canadians to pause and think, learn about, share, and work towards solving issues that affect us all on a global scale – while leveraging the power of technology!  More information on monthly themes [here](https://www.canadalearningcode.ca/code-can-change-the-world/)
 
-*August's theme is POPULATION.*
+*October's theme is EDUCATION.*
 
-See slide 38 for suggestions on how learners can incorporate this month’s theme into their projects - if they choose to participate.
--->
+See slide 5 for suggestions on how learners can incorporate this month’s theme into their projects - if they choose to participate.
+
 # Teachers Learning Code
 # VR for Educators
 
@@ -16,9 +14,9 @@ See slide 38 for suggestions on how learners can incorporate this month’s them
 
 Preview Full Day Slides: https://ladieslearningcode.github.io/tlc-vr-for-edu/slides-en.html
 
-<!--Preview 2-hour visit Slides (for Code Mobiles): https://ladieslearningcode.github.io/tlc-scratch-for-edu/slides-en-2hours.html
+<!--Preview 2-hour visit Slides (for Code Mobiles): https://ladieslearningcode.github.io/tlc-vr-for-edu/slides-en-2hours.html-->
 
-Preview Notes: https://ladieslearningcode.github.io/tlc-scratch-for-edu/notes-en.html-->
+Preview Notes: https://ladieslearningcode.github.io/tlc-vr-for-edu/notes-en.html
 
 ## Attributions
 Content created by Erica Morrill for Canada Learning Code.
@@ -40,28 +38,28 @@ Here’s an easy way to attribute content back to us - please include it whereve
 Our general Rule of Thumb is that it's okay to add examples if you feel it could provide more context for your community. However, we ask that instructors do not remove anything, as the content is designed with intention, whether that be meeting specific learning objectives, or maintaining our organization’s culture through the design.  Any suggestions for revisions or updates can be submitted in Github via issues and pull requests. If submitting an issue, please include the slide number(s) in the title.
 
 # Français
-<!--## Ce contenu fait partie d'un thème mensuel!
+## Ce contenu fait partie d'un thème mensuel!
 
 En 2019, nous souhaitons encourager toute la population du Canada à discuter, à apprendre et à réfléchir à propos de thèmes précis et à travailler sur des solutions technologiques à des problèmes qui touchent toute la planète.
 Obtenez plus d'informations sur les thèmes mensuels en [cliquant ici](https://www.canadalearningcode.ca/fr/le-code-a-le-potentiel-de-changer-le-monde/).
 
-*Le thème du mois d'août : la population.*
+*Le thème du mois d'octobre : l'education.*
 
-Consultez la diapositive n° 38 pour obtenir des suggestions pour intégrer le thème aux projets des apprenants, s'ils souhaitent participer au thème.
+Consultez la diapositive n° 5 pour obtenir des suggestions pour intégrer le thème aux projets des apprenants, s'ils souhaitent participer au thème.
 
 # Enseignants en programmation
 # Scratch pour les enseignants
 
 ## Liens rapides
 
-Aperçu des diapositives (atelier d'une journée complète) : https://ladieslearningcode.github.io/tlc-scratch-for-edu/slides-fr.html
+Aperçu des diapositives (atelier d'une journée complète) : https://ladieslearningcode.github.io/tlc-vr-for-edu/slides-fr.html
 
-Aperçu des diapositives (visite de 2 heures, pour les Code Mobiles) : https://ladieslearningcode.github.io/tlc-scratch-for-edu/slides-fr-2heures.html
+<!--Aperçu des diapositives (visite de 2 heures, pour les Code Mobiles) : https://ladieslearningcode.github.io/tlc-vr-for-edu/slides-fr-2heures.html-->
 
-Aperçu des notes : https://ladieslearningcode.github.io/tlc-scratch-for-edu/notes-fr.html
+Aperçu des notes : https://ladieslearningcode.github.io/tlc-vr-for-edu/notes-fr.html
 
 ## Attributions
-Contenu créé par Kassandra Lenters pour Canada en programmation, en collaboration avec Sharon Brown, Jaci Banton, Wilson Klodt Wong et Cael Nisbet.
+Contenu créé par Erica Morrill pour Canada en programmation.
 
 Diapositives créées par Christina Truong pour Canada en programmation.
 
@@ -78,4 +76,3 @@ Nous vous invitons à ajouter ce petit passage aux endroits où vous citez ou ut
 ## Contribution
 
 En général, vous avez le droit d'ajouter des exemples si vous jugez qu'ils soutiennent l'apprentissage de votre groupe d'apprenants. Toutefois, nous demandons aux formatrices de ne pas supprimer de contenu, car chaque élément a sa raison d'être. Par exemple, le contenu sert à atteindre un objectif d'apprentissage précis et la conception graphique reflète la culture de notre organisme. Si vous avez des suggestions ou croyez qu'un certain contenu doit être modifié, soumettez vos commentaires par Github (problèmes (issues) ou requêtes (pull requests)). Si vous soumettez un problème, veuillez inclure le numéro des diapositives dans le titre.
--->

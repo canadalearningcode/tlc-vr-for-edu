@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Enseignants en programmation</title>
+  <link rel="stylesheet" href="framework/css/slideshow.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/fonts.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/highlightjs/github.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/styles.css" data-noprefix>
+  <link rel="shortcut icon" href="framework/img/favicon.ico">
+
+  <!-- S’occupe des préfixes CSS3 -->
+  <script src="framework/scripts/prefixfree.min.js"></script>
+
+  <!-- Ouvre tous les liens dans une nouvelle fenêtre -->
+  <base target="_blank">
+</head>
+
+<!-- Durée / barre de progression : définissez la durée de la présentation avec « data-duration » en minutes. -->
+<body class="en" data-duration="360">
+
+
+  <main>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #Notes de la formatrice
+
+        #Enseignants en programmation : la réalité virtuelle pour les enseignants
+
+        ##Préparation
+
+        Nous recommandons aux formatrices et aux mentores de visionner ces vidéos YouTube avant l’atelier (en anglais) :
+
+        * [CoSpaces pour les débutants](https://youtu.be/p3ClYgaH89k)
+        * Applications principales : [Raconter une histoire - CoSpaces Edu](https://youtu.be/SAaLoXmpUig)
+        * [Utiliser la caméra dans CoSpaces](https://youtu.be/CoWNuHaNFUo)
+        * Tutoriel pour la galerie CoSpaces Edu - [Publication](https://youtu.be/W0_PBJOyRJM)
+
+        <br>
+        ##Ordre du jour
+
+        **Présentation (30 min) :** Bienvenue, Le code des programmeuses, Objectifs d'apprentissage, Intro à la RV, Applications de la RV
+
+        **Google Expeditions (1 heure 30 min) :** Essai d’une expédition, Liens avec le programme de formation, Exploration, Planification de cours
+
+        **Dîner (1 heure)**
+
+        **Intro à la programmation (15 min) :** Activité hors ligne, Qu'est-ce que la programmation, Pourquoi enseigner la programmation
+
+        **CoSpaces (1 heure 30 min) :** Intro à CoSpaces Edu, Activité de programmation de RV en groupe : recréer une fable, Exploration, Ressources supplémentaires
+
+        **Pause (15 min)**
+
+        **Évaluation (30 min) :** À considérer, Discussion, Grilles
+
+        **Prolongement :** Planification de cours avec CoSpaces
+
+        **Conclusion (15 min) :** Prochaines étapes, Réussites, Réflexion
+
+        <br>
+        **Diapositives d’introduction
+
+        <table style="font-size:2rem;">
+            <tr>
+              <td><strong style="font-size:3.2rem;">Diapositive</strong></td>
+              <td><strong style="font-size:3.2rem;">Notes</strong></td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive1.png" alt="diapositives"></td>
+              <td>Voici comment accéder au réseau Wi-Fi. Veuillez vous connecter sur votre ordinateur et sur votre téléphone si vous souhaitez utiliser les visionneuses (« casques ») avec Google Expeditions et CoSpaces.
+                <br>
+                Vous pouvez télécharger les diapositives et suivre le cours sur votre ordinateur en allant à l'adresse indiquée à l’écran. <i>(Mettez le lien vers les diapositives GitHub sur une autre surface/un autre écran pour vous y référer plus tard.)</i>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive3.png" alt="diapositives"></td>
+              <td> Maintenant, j'aimerais vous présenter des personnes indispensables à l'atelier : les mentores!
+              <br>
+              <i>Demandez aux mentores de venir vous rejoindre à l'avant de la classe. Elles pourront se présenter en disant leur nom et leur emploi.</i>
+              <br><br>
+              Les mentores seront là pour vous aider si vous avez des problèmes. N'hésitez pas à leur poser des questions au besoin. <br>
+              <br><br>
+              Mettez-vous avec une partenaire et discutez des notions que vous souhaitez apprendre aujourd’hui. <i>(Si le nombre d’apprenantes est impair, elles peuvent former des groupes de 3.) Demandez à quelques personnes de dire leurs réponses au reste du groupe. (5 min)</i>
+              <br><br></td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive4.png" alt="diapositives"></td>
+              <td>
+                <ol>
+                    <li><strong>Soyez chaleureuses et accueillantes.</strong> Nous vous invitons à faire connaissance avec vos collègues pendant les pauses.
+                    <li><strong>Choisissez bien vos mots et vos actions.</strong>
+                    <li><strong>Respectez l'espace des autres durant les conversations.</strong> Laissez la chance à tout le monde de donner son opinion.
+                    <li><strong>Posez des questions</strong> Posez des questions aux mentores ou à la formatrice si une notion n'est pas claire.
+                    <li><strong>Faites de votre mieux (et amusez-vous!)</strong> Même les meilleures programmeuses ont parfois de la difficulté. Nous ne nous attendons pas à ce que vous soyez parfaites. Il vous suffit de faire de votre mieux. N'ayez pas peur d'essayer des choses et de faire des erreurs! Explorez et essayez toutes les fonctionnalités des programmes que nous découvrirons aujourd’hui. Si vous vous sentez à l'aise de montrer votre projet CoSpaces, vous pourrez le faire partager au groupe plus tard. </td>
+                  </ol>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive6.png" alt="diapositives"></td>
+              <td> Nous ferons beaucoup de découvertes aujourd'hui. D’abord, nous participerons à des expéditions de réalité virtuelle. Le site de Google Expeditions propose une vaste sélection d’expéditions guidées. De plus, Google Expeditions offre beaucoup de soutien aux enseignants, comme des ressources et des scripts pour les expéditions. Cet après-midi, nous apprendrons à programmer avec des blocs dans CoSpaces. Finalement, nous regarderons nos projets de réalité virtuelle dans les visionneuses.
+            </tr>
+
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive7.png" alt="diapositives"></td>
+              <td> À la fin de la journée, vous aurez découvert d’excellents outils que vous pourrez utiliser avec vos élèves.</td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive8.png" alt="diapositives"></td>
+              <td> Nous sommes en train de développer une base de données de leçons et d'activités que vous pourrez intégrer à vos cours. N'hésitez pas à consulter le site d'Enseignants en programmation pour voir notre offre de leçons pour les enseignants.
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive9.png" alt="diapositives"></td>
+              <td> Avez-vous déjà participé à une expérience de réalité virtuelle? <i>(Écoutez quelques réponses. Mentionnez quelques endroits où les enseignantes pourraient accéder à des expériences de RV dans la région.)</i> Il existe de nombreux programmes pour créer des projets de réalité virtuelle avec le code, comme A-Frame et Unity. Cependant, CoSpaces est l’un des plus faciles d’utilisation grâce à son système de programmation par blocs. Il y a aussi de nombreuses visionneuses (ou « casques ») de réalité virtuelle, comme Oculus Rift, Oculus Go, HTC VIVE, Merge Goggles et les visionneuses génériques en carton. Les prix varient beaucoup : une visionneuse en carton d’Amazon coûte 8 $ tandis que le système HTC VIVE coûte 699 $.  </td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive10.png" alt="diapositives"></td>
+              <td>La réalité virtuelle est une technologie émergente dans le domaine de l’enseignement. Beaucoup de gens pensent que la réalité virtuelle ne sert qu'au divertissement. Ce n'est pas le cas : elle est utile dans plusieurs secteurs d'activité. Ainsi, nous souhaitons que les élèves développent des compétences en création de projets de réalité virtuelle, en plus de consommer la technologie.</td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive11.png" alt="diapositives"></td>
+              <td> Dans le domaine de la santé, les modèles de réalité virtuelle peuvent aider les chirurgiens à trouver des tumeurs ou à simuler des chirurgies délicates.
+              Du côté de la NASA, les experts font appel à la réalité virtuelle pour contrôler des robots sur Mars. La technologie sert aussi à réduire le stress des astronautes.
+              La réalité virtuelle est aussi bien présente dans les musées. Grâce à une visionneuse en carton, vous avez accès à une partie de la collection de l’American Museum of Natural History.
+              Dans l’industrie automobile, certains employés portent un casque de réalité virtuelle pour examiner l’intérieur et l'extérieur d’un véhicule.
+              La technologie a même un avenir dans le domaine du droit. La réalité virtuelle peut aider les jurés à explorer une scène de crime afin de voir les objets et les personnes qui s’y trouvent.
+              Finalement, le programme de réalité virtuelle Guided Meditation propose aux utilisateurs de méditer dans un « paradis privé ». Il suffit de mettre un casque de RV pour être plongé dans un environnement qui invite à la détente.</td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive12.png" alt="diapositives"></td>
+              <td>  Qui a déjà entendu parler de Google Expeditions?  </td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive13.png" alt="diapositives"></td>
+              <td> Il faut bien l’avouer : même si nous rêvons toutes d'avoir un bus magique pour faire le tour du monde avec nos élèves, c'est impossible (et peu pratique). Par contre, les vidéos 360° de Google Expeditions nous permettent de visiter des lieux aux quatre coins du monde sans mettre les pieds à l'extérieur de la classe. Il s'agit d’un excellent point de départ pour intégrer la RV dans les cours. Il y a deux « vues » différentes dans l'application. La première vue est celle du guide, c'est-à-dire, la vue de l'enseignante. Elle est accompagnée d’un script. La deuxième vue est celle de l'explorateur. Les élèves peuvent participer à l'expédition du guide au moment où celui-ci active le mode de visite (« Tour ») sur son appareil. En plus de Google Expeditions, vous trouverez des vidéos 360° sur YouTube que vous pourrez regarder avec vos élèves. Pour les trouver, tapez « 360 Degree Videos for Education » dans la barre de recherche YouTube.
+               </td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive14.png" alt="diapositives"></td>
+              <td> Vous aurez besoin de quelques appareils pour utiliser Google Expeditions. Si vous n'avez pas beaucoup d'appareils à votre disposition, voici quelques trucs. Par exemple, vous pourriez former des groupes d’élèves, qui se partageront un iPad ou une visionneuse de réalité virtuelle. Vous pourriez aussi créer un « coin expédition » dans votre classe ou proposer l'expédition comme choix d'activité pendant une période libre. Il est possible que le service des TI de votre établissement doive installer l’application sur vos appareils. Si vous souhaitez faire un projet de création de vidéos 360°, il vous faut une caméra 360° (p. ex., RICOH THETA ou Samsung 360) ou des appareils ayant une application de caméra 360° installée (p. ex., 360 Panorama). Conseil : nous vous recommandons de télécharger les expéditions à la maison si le Wi-Fi est lent à l’école. </td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive15.png" alt="diapositives"></td>
+              <td> Si vous n'avez pas encore téléchargé l’application Google Expeditions sur votre appareil, veuillez le faire maintenant. De plus, assurez-vous que vous êtes bien connectée au Wi-Fi afin de faire l'expédition avec moi (le guide). Lorsque tout le monde aura téléchargé l’application, nous suivrons les étapes pour accéder à l'expédition tous ensemble. (5 min)<i> <br><br>(Les mentores peuvent vous aider en distribuant les visionneuses ou en aidant les enseignantes à télécharger l'application. Pour la formatrice : vérifiez si vous avez bien téléchargé l'expédition de les grandioses parcs nationaux Nord Canadien et commencez la visite sur un appareil connecté au Wi-Fi local.) Conseil : les appareils surdimensionnés pourraient être trop gros pour les visionneuses. Nous suggérons aux participants de s'asseoir pendant l’expédition. Maintenez les visionneuses en carton bien en place sur l'appareil en tenant les côtés ou en utilisant du ruban adhésif.</i></td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive16.png" alt="diapositives"></td>
+              <td> Aujourd’hui, nous visiterons les grandioses parcs nationaux Nord Canadien. En ce qui concerne les liens avec le programme de formation, cette expédition correspond aux compétences du programme d’études sociales de la 4e année (Ontario). Plus nous avancerons dans l'expédition, plus vous ferez de liens avec le programme. Google Expeditions propose un script au guide. L'enseignante est la seule à pouvoir lire ce script sur son appareil. ATTENTION : les visionneuses et les casques présentent des risques pour les personnes atteintes de nausées (mal des transports) ou d’épilepsie. Si vous souhaitez rendre l’activité accessible, proposez aux personnes qui préfèrent ne pas prendre de visionneuse de regarder les expéditions sur un iPad et d’utiliser la fonction de gyroscope pour faire l'expérience. Conseil pour la classe : si vous enseignez au primaire, dites aux élèves de mettre leur appareil en « mode politesse » (l’écran face à la table) quand vous parlez afin de vous assurer qu’ils écoutent bien durant l'expédition. </td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive17.png" alt="diapositives"></td>
+              <td> <i>Aidez les enseignantes à participer à l'expédition comme exploratrices en suivant les consignes.</i><br>
+                <br>
+                1. Ouvrez l'application. <br>2. Allez à « Explore ». <Br>3. Cliquez sur « Join Button ».<br> 4. Cliquez sur « Join existing tour ». <br>5. Suivez les flèches pour le cercle blanc.<br><i> <br>(Les mentores peuvent vous aider à cette étape.) Ensuite, lisez le script pendant que les exploratrices visitent les grandioses parcs nationaux Nord Canadien. Remarque : Selon le temps dont vous disposez, il est possible que vous deviez résumer le script ou passer quelques descriptions. N’oubliez pas de prendre un ton expressif lorsque vous lisez. Il y a beaucoup de contenu donc il est facile de tomber dans la monotonie.</i> <br>À mentionner aux apprenantes : si vous ne regardez pas l’endroit que le guide aimerait que vous regardiez, une flèche s’affichera à l’écran. Suivez la flèche jusqu’à ce qu’un cercle s'affiche et ne bougez plus l’appareil. Je vous parlerai de l’élément que vous voyez. (10 min)</td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive18.png" alt="diapositives"></td>
+              <td> Avec une partenaire, regardez les compétences du programme d’études sociales de 4e année de l’Ontario. Quelles sont les compétences développées durant cette expédition? Option : discutez des liens entre les compétences de différentes disciplines et le contenu de l'expédition. <i>Voici un lien regroupant les programmes des différentes provinces : <a href="https://libguides.msvu.ca/c.php?g=114528&p=745441">Programmes de formation</a></i> (10 min)</td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive19.png" alt="diapositives"></td>
+              <td> Google propose une feuille de calcul comprenant plus de 900 expéditions. Prenez le temps de consulter la feuille. N'hésitez pas à afficher d’autres expéditions sur votre appareil ou à jouer le rôle de guide. Par exemple: cherchez le mot « Greece » et affichez l'expédition comme guide. Naviguer en tant que guide : lorsque vous aurez téléchargé votre expédition, utilisez le triangle blanc dans le cercle rouge en bas de l’écran pour voir le script. Glissez l’écran vers la gauche pour voir d'autres scènes avec des scripts. (20 mins)</td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive20.png" alt="diapositives"></td>
+              <td> En plus de fournir des scripts pour les expéditions, Google offre aussi des ressources et des modèles de plan de cours. Avec une partenaire, utilisez le modèle pour planifier un cours. (10 min)</td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive21.png" alt="diapositives"></td>
+              <td> Voici quelques liens vers des ressources supplémentaires qui vous aideront à intégrer Google Expeditions à vos cours. <i> (Cliquez sur les liens pour afficher les différents sites.)</i></td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/slide22.png" alt="diapositives"></td>
+              <td> Nous avons vu beaucoup de notions ce matin. Nous méritons une pause! Ça tombe bien, c'est l'heure du dîner. <i> (Dites les informations sur le dîner, y compris l’heure à laquelle le cours recommencera cet après-midi.)</i></td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive23.png" alt="diapositives"></td>
+              <td> Aujourd’hui, nous créerons un environnement de réalité virtuelle avec un outil de programmation par blocs. Nous allons passer de consommatrices de technologie à créatrices de technologie.</td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive24.png" alt="diapositives"></td>
+              <td> <li> <i>Mettez-vous en groupe de deux. Une personne sera la programmeuse et l'autre sera le robot. <li>Chaque groupe fera une action différente, p. ex., lacer ses chaussures ou ouvrir une porte. <li>Vous pouvez demander aux participantes de piger une action dans un chapeau, attribuer les actions vous-même ou laisser les apprenantes choisir l'action de leur choix. <li> Dites à la programmeuse d’expliquer au robot les étapes pour faire l'action. N’utilisez que des mots, pas de gestes! <li>Inversez les rôles.<li>Après l’activité, prenez le temps de discuter de l’importance de l’ordre des consignes (la séquence) ainsi que de leur simplicité et clarté.</i></td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive25.png" alt="diapositives"></td>
+              <td> <li>Félicitez les apprenantes : elles ont créé leur premier algorithme!
+                  <li>Question : Quel était le rôle le plus difficile à jouer, celui de la programmeuse ou du robot?
+                  <li><i>Demandez au groupe les difficultés qu'elles ont rencontrées pendant l’explication.
+                  <li>Choisissez un extrait de code à consulter en groupe. Les participantes voient-elles des tendances ou des éléments répétés dans le code?
+                  <li>Comment simplifier les algorithmes?</i></td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive26.png" alt="diapositives"></td>
+              <td> <li>Algorithmes : un ensemble de consignes à suivre étape par étape pour résoudre un problème.
+                <li>Séquences : une série d’étapes à suivre dans un certain ordre pour réaliser une tâche. Tant les ordinateurs que l’outil CoSpaces lisent et exécutent des commandes (des CoBlocks) dans un ordre précis, de haut en bas.</td>            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive27.png" alt="diapositives"></td>
+              <td> Nous créerons des projets avec le logiciel et des blocs de programmation. Toutefois, nous en ferons l'expérience à l'aide d’une visionneuse (ou d’un casque) de réalité virtuelle. Si nous ne regardons pas notre monde virtuel dans la visionneuse, nous n'aurons pas l'expérience d’immersion optimale.</td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive28.png" alt="diapositives"></td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive29.png" alt="diapositives"></td>
+              <td> <i> Lire la diapositive</i></td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive30.png" alt="diapositives"></td>
+              <td> CoSpaces Edu est une plateforme pédagogique permettant aux élèves et aux enseignantes de créer des environnements 3D, de les animer avec du code (des blocs ou du JavaScript) et de les explorer avec la technologie de réalité virtuelle ou de réalité augmentée. Les enseignantes peuvent créer une classe virtuelle et gérer des comptes d’élèves. Comme CoSpaces est un outil Web, vous n'avez pas à télécharger de logiciel sur votre ordinateur. Toutefois, si vous utilisez une tablette ou un téléphone Android ou iPhone, vous devrez installer l’application CoSpaces Edu pour afficher les projets. Les enseignantes peuvent attribuer aux élèves des projets de la bibliothèque CoSpaces ou leur permettre de créer leurs propres environnements selon des notions apprises en classe. Il y a deux versions de CoSpaces : une version gratuite offrant l'accès à des blocs de programmation simples, et une version pro qui comprend plus de blocs de programmation et des fonctions avancées que nous verrons plus tard. CoSpaces continue à ajouter de nouvelles fonctionnalités pour améliorer la plateforme. Par exemple, un deuxième enseignant pourra avoir accès aux comptes d’élèves.
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive31.png" alt="diapositives"></td>
+              <td> Voici une vidéo d’introduction aux différentes fonctionnalités de CoSpaces. Vous n'avez pas besoin de vous rappeler du contenu de la vidéo, car nous verrons les fonctionnalités dans les prochaines diapositives. <i> (Activez les sous-titres pour rendre la vidéo accessible à toutes les apprenantes.)</td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive32.png" alt="diapositives"></td>
+              <td> CoSpaces ressemble à Scratch, mais l’environnement que vous créez est en 3D. Le site de l’Heure de code comprend deux tutoriels CoSpaces dans la section des activités. <i> (Prenez le pouls de la classe : combien de personnes connaissent Scratch? En faisant cela, vous aidez les mentores à savoir qui aura peut-être besoin de soutien supplémentaire.)</i></td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive33.png" alt="diapositives"></td>
+              <td> Commençons! <i> (Dites aux apprenantes de se créer un compte pour enseignant. Vous avez aussi l’option de créer un compte pour le groupe, et tout le monde se connectera comme élève. Toutefois, il serait bon que les enseignantes créent leur propre compte. Elles pourront ainsi l’utiliser avec leur propre classe. <br> Remarque : Vous devrez créer une classe d'avance pour avoir un code. Ce code servira aux participantes de la classe. Dans le menu « My Classes », il y a un bouton « Create a class ».)</i></td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive34.png" alt="diapositives"></td>
+              <td> Lorsque vous leur aurez donné un code de classe, les élèves pourront se connecter facilement avec leur compte d’élève. Un élève qui possède déjà un compte peut l’utiliser pour se joindre à votre classe. Il peut utiliser le code dans la fenêtre de gestion.</td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive35.png" alt="diapositives"></td>
+              <td> Si les enseignantes se connectent à votre classe, indiquez le code sur la diapositive ou écrivez-le sur une feuille que vous afficherez dans le local.</td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive36.png" alt="diapositives"></td>
+              <td><i> Montrez les fonctionnalités de la version gratuite. Il y a 30 places dans une classe : une place est réservée à l'enseignante et les 29 autres, aux élèves. Remarque : Les options de programmation sont limitées dans la version gratuite. Non seulement il n’y a pas beaucoup de blocs, mais les blocs ne peuvent pas être exécutés parallèlement. Ainsi, les apprenantes devront programmer leur projet comme une histoire linéaire. L’histoire commence par une action, celle-ci est suivie d’une autre action, et d’une autre, etc.)</i>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/diapositive37.png" alt="diapositives"></td>
+              <td> <i> Montrez les fonctionnalités de la version pro. Les ambassadeurs CoSpaces publient souvent des codes d'essai gratuit de la version pro sur les réseaux sociaux. Par exemple, celui-ci : « COSCARLOSEM ». Vous ne pouvez utiliser un code d'essai gratuit qu’une seule fois pour un même compte. L’essai ne dure que 30 jours.  (Demandez aux participantes de noter le code si elles veulent l’utiliser avec leurs élèves.)<i> Remarque : Si les enseignantes ont des questions sur Merge Cube ou sur la réalité augmentée, vous pourrez y répondre à la pause ou à la fin de la journée. Nous n'abordons pas ces sujets durant l'atelier.</i></td>
+            </tr>
+          </table>
+
+        <br>
+
+        #Programmation en groupe
+        * Pendant la séance de programmation en groupe, vous avez deux options. La première est d’ouvrir un nouvel onglet dans lequel vous créerez votre environnement CoSpaces. Vous pourrez donc lire chaque étape dans les diapositives et créer votre environnement graduellement.
+        * La deuxième option est d’utiliser les diapositives comme référence pendant que vous enseignez directement dans votre projet CoSpaces. Ainsi, les enseignantes pourront voir les fonctionnalités en action et apprendre des trucs.
+        * N’oubliez pas de cliquer sur « Play » (l’icône dans le coin droit supérieur) pour afficher votre projet et vérifier sa progression pendant que vous travaillez.
+        * Dans le mode « Edit », cliquez sur la caméra et montrez le champ de vue. Faites comprendre aux enseignantes que pour voir les objets au moment où nous cliquons sur « Play », ils doivent être dans le champ de vue ou devant la caméra. Vous pouvez cliquer sur « Play » pour vérifier la position de vos objets.
+
+        ##Activité de création en groupe
+
+        <table style="font-size:2rem;">
+            <tr>
+
+              <tr>
+                <td><img src="framework/img/workshop/slides/diapositive38.png" alt="diapositives"></td>
+                <td>
+                <br>
+                <br>
+                Aujourd’hui, nous allons recréer une fable, en toute simplicité.
+                </td>
+              </tr><tr>
+                <td><img src="framework/img/workshop/slides/diapositive39.png" alt="diapositives"></td>
+                <td> Pour nous rafraîchir la mémoire, voici une vidéo sur la fable. (Lien vers un exemple de projet : https://cospac.es/8b6M ) Montrez le projet, mais pas le code. </td>
+              </tr><tr>
+                <td><img src="framework/img/workshop/slides/diapositive40.png" alt="diapositives"></td>
+                <td> <i>Montrez aux participantes comment créer un nouvel environnement. Elles travailleront sur ce projet pendant la séance. Question : « Quelle est la première chose à faire dans la création de notre fable? » (Réponses possibles : écrire un plan pour l’histoire, choisir un arrière-plan, sélectionner un personnage, ajouter du texte, etc.)</i>
+                  <br>
+                  <br>
+
+                </td>
+              </tr><tr>
+                <td><img src="framework/img/workshop/slides/diapositive41.png" alt="diapositives"></td>
+                <td>Montrez aux apprenantes comment sélectionner l’environnement 3D sur lequel elles travailleront. Vous pouvez parler de l’option 360°. Conseil : Beaucoup de téléphones intelligents ont un mode 360°. À l'aide d’une application mobile, vous pouvez prendre vos propres photos 360°. Pour iOS : Google Street View (« Camera View ») par Google, Inc. et 360 Panorama par Occipital, Inc.
+                <br>
+                <br>
+
+                </td>
+              </tr><tr>
+                <td><img src="framework/img/workshop/slides/diapositive42.png" alt="diapositives"></td>
+                <td><i> Montrez à la classe comment sélectionner un environnement avec les préréglages.  Posez cette question : « Quel arrière-plan convient le mieux à notre fable? » </i>
+                <br><br>
+
+                <br><br>
+
+              </td>
+              </tr>
+              <tr>
+                <td><img src="framework/img/workshop/slides/diapositive43.png" alt="diapositives"></td>
+                <td> <i>Montrez la bibliothèque d’objets après avoir sélectionné un environnement. Demandez aux apprenantes d'ajouter de la végétation et des roches pour créer une jungle. Ensuite, prenez quelques minutes pour montrer comment combiner deux ou trois objets préfabriqués (p. ex., des roches) pour créer de nouveaux objets. Finalement, montrez les différentes options de commande par le mouvement (« Motion control ») dans votre projet. Pour zoomer, cliquez et glissez le curseur de la souris en enfonçant la touche Espace. Discutez des façons d’animer les objets pour créer des effets, par exemple, un effet de vent. (Accordez 10 minutes aux enseignantes pour personnaliser l'environnement.)</i></td>
+                <tr>
+                  <td><img src="framework/img/workshop/slides/diapositive44.png" alt="diapositives"></td>
+                  <td> <i>Montrez les fonctionnalités de la bibliothèque et les personnages disponibles dans la version gratuite. Mentionnez les fonctions de recherche et de téléversement. Ainsi, les apprenantes pourront téléverser des objets 3D trouvés sur Internet ou leurs créations personnelles dans CoSpaces.</i></td>
+                  <tr>
+                    <td><img src="framework/img/workshop/slides/diapositive45.png" alt="diapositives"></td>
+                    <td> <i>Montrez comment choisir et personnaliser un personnage. Le menu accessible en faisant un clic gauche vous permettra de déplacer et de redimensionner votre personnage. Prenez un petit instant pour montrer chaque fonction au groupe. N’oubliez pas de montrer la différence entre un clic droit et un clic « normal ». Le menu accessible en faisant un clic droit offre des options de personnalisation. Montrez comment modifier quelques éléments dans l’option « Materials ».</i></td>
+                  <tr>
+                  <td><img src="framework/img/workshop/slides/diapositive46.png" alt="diapositives"></td>
+                  <td>Montrez comment changer l’angle des personnages et passer du mode de lecture (« Play ») au mode de modification (« Edit ») afin que les participantes puissent mettre les personnages dans le champ de vue.</td>
+                  <tr>
+                  <td><img src="framework/img/workshop/slides/diapositive47.png" alt="diapositives"></td>
+                  <td> Expliquez au groupe comment sélectionner le code des personnages en cliquant sur le bouton à bascule. Vous pourrez voir les CoBlocks du personnage.</td>
+                  </tr>
+                  <tr>
+                    <td><img src="framework/img/workshop/slides/diapositive48.png" alt="diapositives"></td>
+                    <td> Montrez comment diviser l’écran pour accéder aux CoBlocks. De plus, montrez comment ajouter et effacer des blocs dans l’espace de travail. </td>
+                  </tr>
+                  <tr>
+                    <td><img src="framework/img/workshop/slides/diapositive49.png" alt="diapositives"></td>
+                    <td> Accordez quelques minutes aux participantes pour ajouter des blocs de transition et faire bouger les personnages. Rappelez-leur que les mouvements ne sont pas parallèles dans la version gratuite. </td>
+                  </tr><tr>
+                    <td><img src="framework/img/workshop/slides/diapositive50.png" alt="diapositives"></td>
+                    <td> Les enseignantes passeront d’une vue à l’autre (modification et lecture) pour essayer le code et le déboguer.</td>
+                  </tr><tr>
+                    <td><img src="framework/img/workshop/slides/slide51.png" alt="diapositives"></td>
+                    <td> Montrez la vidéo sur la vue de caméra. </td>
+                  </tr><tr>
+                    <td><img src="framework/img/workshop/slides/diapositive52.png" alt="diapositives"></td>
+                    <td> <i>Il s'agit d'un excellent moment pour expliquer au groupe le champ de vue de la caméra. Si vous placez votre personnage à l'extérieur du champ de vue de la caméra, il ne s'affichera pas immédiatement lorsque vous appuierez sur « Play ». <br><br>Options de la caméra : <br>Fixe (Fixed) - Vous êtes en position fixe et vous pouvez seulement regarder la scène avec la souris et les flèches du clavier. <br> Marche (Walk) - Vous marchez dans la scène avec les flèches ou les touches WASD du clavier. Vous utilisez la souris pour regarder autour de vous. <br>Vol (Fly) - Vous volez au-dessus de la scène avec les flèches ou les touches WASD. Les touches QE servent à changer la hauteur. Vous utilisez la souris pour regarder autour de vous. <br>Orbite (Orbit) - Vous vous déplacez en mouvement circulaire dans une zone définie autour du centre de la scène avec la souris, les flèches ou les touches WASD.</i></td>
+                  </tr><tr>
+                    <td><img src="framework/img/workshop/slides/diapositive53.png" alt="diapositives"></td>
+                    <td> Expliquez les deux options d'ajout du son. Permettez aux participantes de choisir l’option qui leur convient. En classe, il est peut-être plus facile d’enregistrer des sons. <br><br>Quelques enregistrements YouTube pour ce projet :<br> Rugissement de lion : http://bit.ly/33s8eHi <br>Rat : http://bit.ly/2McxEDb <br>Sons de la jungle : http://bit.ly/2YYiffN </td>
+                  </tr><tr>
+                    <td><img src="framework/img/workshop/slides/diapositive54.png" alt="diapositives"></td>
+                    <td> Expliquez au groupe comment télécharger des sons.</td>
+                  </tr><tr>
+                    <td><img src="framework/img/workshop/slides/diapositive55.png" alt="diapositives"></td>
+                    <td> Montrez aux enseignantes comment sélectionner un fichier à téléverser dans CoSpaces. Rappelez-leur que la version gratuite est limitée à 10 téléversements. Ceci comprend les graphiques et les sons.</td>
+                  </tr><tr>
+                    <td><img src="framework/img/workshop/slides/diapositive56.png" alt="diapositives"></td>
+                    <td> Montrez comment ajouter le bloc de son après la course du rat sous le lion.</td>
+                  </tr><tr>
+                    <td><img src="framework/img/workshop/slides/diapositive57.png" alt="diapositives"></td>
+                    <td> Après le rugissement, faites courir le rat vers le lion.</td>
+                  </tr>
+                  <tr>
+                    <td><img src="framework/img/workshop/slides/diapositive58.png" ait="diapositives"></td>
+                    <td>Ajoutez du dialogue à votre histoire. Pour désactiver la bulle, utilisez un autre bloc sans texte dans les guillemets. Vous devrez peut-être utiliser des blocs d'attente (« Wait ») pour parler au bon moment.</td>
+                  </tr>
+                  <tr>
+                    <td><img src="framework/img/workshop/slides/diapositive59.png" ait="diapositives"></td>
+                    <td> Accordez au groupe quelques minutes pour modifier leur environnement de RV (45-60 minutes).
+                      N’oubliez pas de réserver au moins 15 minutes pour les démonstrations. Il vous faudra 10 minutes pour expliquer aux apprenantes comment préparer leur appareil et utiliser les visionneuses de réalité virtuelle et 10 minutes supplémentaires pour les essais.
+                      Si les apprenantes modifient leurs projets sur l’ordinateur et qu'elles souhaitent voir les changements dans les visionneuses, elles devront rouvrir l’environnement sur leur téléphone. Pour ce faire, elles n’ont qu’à appuyer sur le bouton « Home » en haut à gauche et sélectionner leur environnement une autre fois.
+                      Accordez à chaque apprenante 10 minutes pour essayer leur création. Elles auront donc un aperçu de leur projet et des modifications dans une visionneuse de réalité virtuelle. Ce processus leur sera très utile lorsqu'elles ajouteront du code à leurs projets durant les prochaines séances de travail. Elles pourront voir la différence entre leur projet dans la visionneuse de réalité virtuelle et sur l’écran d’ordinateur.
+                    </td>
+                  </tr><tr>
+                    <td><img src="framework/img/workshop/slides/diapositive60.png" alt="diapositives"></td>
+                    <td>Prenez le pouls de la classe toutes les 10 minutes pour voir si les enseignantes ont des questions. Demandez aux apprenantes de partager leurs réponses et leurs trucs autant que possible.</td>
+                  </tr><tr>
+                    <td><img src="framework/img/workshop/slides/slide61.png" alt="diapositives"></td>
+                    <td> Si les élèves programment dans la classe de l'enseignante, vous devrez peut-être régler les paramètres des comptes d’élèves pour autoriser la publication des CoSpaces dans la galerie.</td>
+                  </tr><tr>
+                    <td><img src="framework/img/workshop/slides/slide62.png" alt="diapositives"></td>
+                    <td> Montrez le processus de publication comme indiqué sur les prochaines diapositives.</td>
+                  </tr><tr>
+                    <td><img src="framework/img/workshop/slides/slide63.png" alt="diapositives"></td>
+                    <td> Conseil : Si vous gérez des comptes d’élèves, vous pouvez vérifier le progrès des élèves dans la section « Students ». Pour afficher les Free Play CoSpaces, les élèves devront donner accès à leurs projets à l'enseignante en cliquant sur « Give teachers access » dans leur CoSpace.</td>
+                  </tr><tr>
+                    <td><img src="framework/img/workshop/slides/diapositive64.png" alt="diapositives"></td>
+                    <td> Une excellente manière de se familiariser avec les fonctionnalités de CoSpaces est de remixer un projet. Cette option est offerte dans la version pro de l’outil.</td>
+                  </tr><tr>
+                    <td><img src="framework/img/workshop/slides/diapositive65.png" alt="diapositives"></td>
+                    <td> <i>Regardez les options du menu, comme dans la diapositive. Montrez aux participantes comment générer un code QR, qui servira de lien pour partager des projets.</i></td>
+                  </tr><tr>
+                    <td><img src="framework/img/workshop/slides/diapositive66.png" alt="diapositives"></td>
+                    <td><i> Accordez du temps aux enseignantes afin qu’elles puissent regarder leurs projets dans la visionneuse ou les faire partager avec le reste de la classe.</i></td>
+                  </tr><tr>
+                    <td><img src="framework/img/workshop/slides/diapositive67.png" alt="diapositives"></td>
+                    <td><i>Montrez les étapes pour accéder à l’application dans les visionneuses.</i></td>
+                  </tr><tr>
+                    <td><img src="framework/img/workshop/slides/diapositive68.png" alt="diapositives"></td>
+                    <td><i> Laissez aux apprenantes assez de temps pour explorer deux autres projets tirés de la galerie.</td>
+                  </tr><tr>
+                    <td><img src="framework/img/workshop/slides/diapositive69.png" alt="diapositives"></td>
+                    <td> <i>Montrez-leur ce projet idéal pour un cours de langues. Les enseignants pourront y accéder avec le code QR.</i></td>
+                  </tr><tr>
+                    <td><img src="framework/img/workshop/slides/diapositive70.png" alt="diapositives"></td>
+                    <td> Voici un exemple de diagramme avec des légendes créé avec CoSpaces.</td>
+                  </tr><tr>
+                    <td><img src="framework/img/workshop/slides/diapositive71.png" alt="diapositives"></td>
+                    <td>S’il reste du temps, les enseignantes pourront sélectionner un autre projet de la galerie à visionner.</td>
+                  </tr>
+                  <tr>
+                    <td><img src="framework/img/workshop/slides/diapositive72.png" alt="diapositives"></td>
+                    <td> <i>Prenez quelques instants pour cliquer sur les ressources et montrer aux enseignantes les différentes options de soutien à l’intégration de CoSpaces en classe.</i></td>
+                  </tr>
+                  <tr>
+                    <td><img src="framework/img/workshop/slides/diapositive73.png" alt="diapositives"></td>
+                    <td> La chaîne YouTube de CoSpaces est une excellente source d’informations. Nous n'avons regardé que quelques tutoriels aujourd'hui. <i> Montrez chaque ressource ou laissez les enseignantes les explorer elles-mêmes.</i></td>
+                  </tr><tr>
+                    <td><img src="framework/img/workshop/slides/diapositive74.png" alt="diapositives"></td>
+                    <td> <i> Faites un retour sur les notions apprises cet après-midi. Demandez aux enseignantes si elles ont des questions. </i></td>
+                  </tr><tr>
+                    <td><img src="framework/img/workshop/slides/diapositive75.png" alt="diapositives"></td>
+                    <td> Quelques exemples d’intégration de CoSpaces dans les différentes disciplines : <br><br>Univers social : création de communautés<br> Écologie : vie durable<br> Arts dramatiques : création de scènes<br> Français : doublage ou textes sur des objets<br> Arts plastiques : téléverser des oeuvres et les mettre dans une galerie pour faire une exposition en RV<br> Architecture : construire des maisons<br> Sciences : créer des diagrammes</td>
+                  </tr><tr>
+                    <td><img src="framework/img/workshop/slides/diapositive76.png" alt="diapositives"></td>
+                    <td> Comment évaluer les élèves dans la création d’environnements CoSpaces? Avez-vous des idées de critères d’évaluation? (Écoutez quelques réponses.) </td>
+                  </tr><tr>
+                    <td><img src="framework/img/workshop/slides/diapositive77.png" alt="diapositives"></td>
+                    <td>À considérer en créant des outils d’évaluation.</td>
+                  </tr><tr>
+                    <td><img src="framework/img/workshop/slides/diapositive78.png" alt="diapositives"></td>
+                    <td> Exemples : évaluez le choix et les attributs des objets, les légendes des diagrammes, l'ambiance créée par la musique ou les effets sonores, la démarche de débogage et de résolution de problèmes avec les blocs de code.</td>
+                  </tr><tr>
+                    <td><img src="framework/img/workshop/slides/diapositive79.png" alt="diapositives"></td>
+                    <td> Les différents critères d’évaluation simples se trouvent au milieu. Le but est de donner des rétroactions plutôt qu’une note.</td>
+                  </tr><tr>
+                    <td><img src="framework/img/workshop/slides/diapositive80.png" alt="diapositives"></td>
+                    <td>Nous espérons que vous continuerez à créer des projets avec CoSpaces. Si vous créez une leçon, n'hésitez pas à la partager avec le reste de la communauté Enseignants en programmation.
+                  </tr><tr>
+                    <td><img src="framework/img/workshop/slides/diapositive81.png" alt="diapositives"></td>
+                    <td> <i> Lire la diapositive </i></td>
+                  </tr><tr>
+                    <td><img src="framework/img/workshop/slides/diapositive82.png" alt="diapositives"></td>
+                    <td> <i> Distribuez des papillons adhésifs et dites aux enseignantes d’écrire leur prochaine étape. Ce sera leur « billet » pour sortir de la classe!</i></td>
+                  </tr><tr>
+                    <td><img src="framework/img/workshop/slides/diapositive83.png" alt="diapositives"></td>
+                    <td> Avez-vous d’autres questions? </td>
+                  </tr><tr>
+                    <td><img src="framework/img/workshop/slides/diapositive84.png" alt="diapositives"></td>
+                    <td> <i> Remerciez les participantes et les mentores.</td>
+                  </tr>
+        </table>
+
+       </script>
+    </section>
+
+<!--Diapositives supplémentaires, liens de la table des matières-->
+
+
+  </main><!-- Section principale cls -->
+
+  <script src="framework/scripts/jquery-1.11.0.min.js"></script>
+  <script src="framework/scripts/slideshow.js"></script>
+
+  <!-- Enlevez les commentaires des modules dont vous avez besoin -->
+  <script src="framework/scripts/plugins/css-edit.js"></script>
+  <script src="framework/scripts/plugins/css-snippets.js"></script>
+  <script src="framework/scripts/plugins/css-controls.js"></script>
+  <!-- <script src="plugins/code-highlight.js"></script>-->
+
+  <script src="framework/scripts/plugins/markdown/marked.js"></script>
+  <script src="framework/scripts/plugins/markdown/markdown.js"></script>
+  <script src="framework/scripts/plugins/highlight/highlight-8.4.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="framework/scripts/llc.js"></script>
+  <script>
+    var slideshow = new SlideShow();
+
+    // Regroupe tous les éléments .snippet
+    var snippets = document.querySelectorAll('.snippet');
+    for(var i=0; i<snippets.length; i++) {
+      new CSSSnippet(snippets[i]);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Canada en programmation</title>
+  <link rel="stylesheet" href="framework/css/slideshow.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/fonts.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/highlightjs/github.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/styles.css" data-noprefix>
+  <link rel="shortcut icon" href="framework/img/favicon.ico">
+
+  <!-- S’occupe des préfixes CSS3 -->
+  <script src="framework/scripts/prefixfree.min.js"></script>
+
+  <!-- Ouvre tous les liens dans une nouvelle fenêtre -->
+  <base target="_blank">
+</head>
+
+<!-- Durée / barre de progression : définissez la durée de la présentation avec « data-duration » en minutes. -->
+<body class="en" data-duration="360">
+
+
+  <main>
+    <section class="slide welcome highlight">
+      <h1><img class="logo-stacked" src="framework/img/tlc-logo-stacked-white.png" alt="Logo de Femmes en programmation">Bienvenue!</h1>
+
+
+      <div class="instructions">
+        <!-- AJOUTER LES INFOS SUR LE WI-FI ICI -->
+        <h2>Connectez-<br>vous <br>(sur l'ordinateur et sur votre <br> appareil mobile)</h2>
+        <p><strong>Wi-Fi :</strong> nom du réseau</p>
+        <p><strong>Mot de passe :</strong> mot de passe</p>
+        <hr>
+
+        <h2>Téléchargez<br> et installez</h2>
+        <ol class="downloads">
+          <li><strong>Ordinateur :</strong> Fichiers d’apprentissage (dossier zip) : <a href="https://github.com/ladieslearningcode/tlc-vr-for-edu/archive/master.zip">bit.ly/tlc-vr-for-edu</a>
+            <ul>
+              <li>Dézippez le dossier (<em>Extraire tout</em> sur Windows).</li>
+              <li>Ouvrez <em>diapositives.html</em> dans le navigateur pour afficher les diapositives.</li>
+            </ul>
+          </li>
+          <li><strong>Mobile :</strong> Ouvrez Google Play ou l’App Store et cherchez :</li>
+          <ul>
+            <li>CoSpaces Edu (par « Delightex GmbH »)</li>
+            <li>Google Expeditions (par « Google LLC »).</li>
+          </ul><br>
+        </ol>
+    </div>
+
+      <footer>
+        <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Licence Creative Commons" src="framework/img/cc-by-nc.png" /></a>
+        <p class="left">Contenu créé par Erica Morrill pour <a prefix="cc: http://creativecommons.org/ns#" href="http://canadalearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Canada en programmation</a></p>
+        <p class="right">Utilisez les flèches gauche <span class="arrow">&#8592;</span> et droite <span class="arrow">&#8594;</span> pour naviguer.</p>
+      </footer>
+    </section>
+
+    <section class="slide intro">
+      <img class="logo" src="framework/img/tlc-logo-white.png" alt="Logo de Canada en programmation">
+      <h1 class="heading-bg">
+        <span>La réalité virtuelle pour les <br>enseignants</span>
+      </h1>
+
+      <ul>
+        <li><a href="http://twitter.com/learningcode">@learningcode</a></li>
+        <li><a href="https://twitter.com/search?q=%23teacherslearningcode&src=typd">#teacherslearningcode</a></li>
+      </ul>
+
+      <div class="sponsor">
+        <!--<p>En partenariat avec<br> <img src="framework/img/logo-white.svg" alt="nom"></p>-->
+      </div>
+      <footer>
+        <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Licence Creative Commons" src="framework/img/cc-by-nc.png" /></a>
+        <p class="left">Diapositives créées par Erica Morrill pour <a prefix="cc: http://creativecommons.org/ns#" href="http://canadalearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Canada en programmation</a></p>
+        <p class="right">Utilisez les flèches gauche <span class="arrow">&#8592;</span> et droite <span class="arrow">&#8594;</span> pour naviguer.</p>
+      </footer>
+    </section>
+
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #Présentation
+        ##Que souhaitez-vous apprendre?
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+       # Le code des programmeuses
+
+       1. Soyez chaleureuses et accueillantes.
+       1. Choisissez bien vos mots et vos actions.
+       1. Respectez l'espace des autres durant les conversations.
+       1. Posez des questions.
+       1. Faites de votre mieux (et amusez-vous!)
+      </script>
+    </section>
+
+    <!--temp slide-->
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        # Le thème du mois d’octobre est...
+        ## L’ÉDUCATION
+
+        Nous faisons des apprentissages dès notre naissance. Ces apprentissages influencent notre façon de voir le monde, les autres et nous-mêmes (c'est-à-dire, notre potentiel). Qu’elle soit traditionnelle ou non, l’éducation a un pouvoir incroyable.
+
+        **Créez un plan de cours qui intègre l'apprentissage par les pairs. Les élèves s'enseigneront des notions avec la réalité virtuelle.**
+
+        Publiez votre projet sur les réseaux sociaux avec le mot-clic #clcCode4Change. Pour obtenir plus d’informations, cliquez [ici](https://www.canadalearningcode.ca/code-can-change-the-world/).
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Ordre du jour
+
+        * Activité brise-glace<!-- .element: class="delayed" -->
+        * Initiation à la réalité virtuelle (RV)<!-- .element: class="delayed" -->
+        * Exemple de réalité virtuelle avec Google Expeditions<!-- .element: class="delayed" -->
+        * Remue-méninges : liens avec le programme de formation<!-- .element: class="delayed" -->
+        * Planification de cours avec Google Expeditions<!-- .element: class="delayed" -->
+        * Dîner<!-- .element: class="delayed" -->
+        * Activité de programmation hors ligne<!-- .element: class="delayed" -->
+        * Initiation à CoSpaces Edu<!-- .element: class="delayed" -->
+        * Activité de programmation en groupe : recréer une fable avec la réalité virtuelle<!-- .element: class="delayed" -->
+        * Évaluation<!-- .element: class="delayed" -->
+        * Ressources supplémentaires sur la réalité virtuelle<!-- .element: class="delayed" -->
+
+       </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Objectifs d'apprentissage
+
+        * Comprendre le concept de la réalité virtuelle et ses possibilités d’application en enseignement<!-- .element: class="delayed" -->
+        * Se familiariser avec les outils Google Expeditions et CoSpaces pour l’enseignement<!-- .element: class="delayed" -->
+        * Apprendre à programmer des projets de réalité virtuelle avec les blocs CoSpaces et créer des paysages d’enseignement virtuels<!-- .element: class="delayed" -->
+        * Explorer des ressources gratuites et des communautés de soutien pour les enseignants utilisant la réalité virtuelle en classe<!-- .element: class="delayed" -->
+        * Obtenir des leçons et des ressources à utiliser en classe<!-- .element: class="delayed" -->
+
+       </script>
+    </section>
+
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+        # [teacherslearningcode.com](http://teacherslearningcode.com)
+
+        <img src="framework/img/workshop/tlcwebsite_fr.png" alt="Capture d’écran de notre site Web">
+
+        Toutes les activités sont offertes gratuitement <br>sur notre site sous forme de plans de cours.
+
+       </script>
+    </section>
+
+    <section class="slide title" data-toc data-markdown>
+      <script type="text/template">
+        # Qu'est-ce que la réalité virtuelle?
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # La réalité virtuelle
+
+        La réalité virtuelle (RV, ou « VR » en anglais) utilise la technologie pour simuler des environnements 3D offrant une immersion complète. Ainsi, l’utilisateur peut regarder autour de lui, se déplacer dans l'environnement et interagir avec les éléments qu’il voit.
+
+        <img src="framework/img/workshop/TLC-VR-User.jpg" width="400px" alt="Utilisateur d’Expeditions">
+
+      </script>
+    </section>
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Applications de la réalité virtuelle
+        * Génie et architecture<!-- .element: class="delayed" -->
+        * Formation professionnelle<!-- .element: class="delayed" -->
+        * Soins médicaux<!-- .element: class="delayed" -->
+        * Santé mentale<!-- .element: class="delayed" -->
+        * Espace<!-- .element: class="delayed" -->
+        * Sports<!-- .element: class="delayed" -->
+        * Éducation<!-- .element: class="delayed" -->
+        * Divertissement<!-- .element: class="delayed" -->
+
+        <hr>
+        ###Ressource :
+        ###<a href="https://bit.ly/2zw3l45"> Beyond Gaming: 10 Other Fascinating Uses for Virtual-Reality Tech </a>
+
+      </script>
+    </section>
+
+    <section class="slide title" data-toc data-markdown>
+      <script type="text/template">
+        # Outil d'enseignement : Google Expeditions
+      </script>
+    </section>
+
+    <section class="slide two-col-list" data-markdown>
+      <script type="text/template">
+        # Google Expeditions
+
+        * Pourquoi utiliser Google Expeditions?
+          * Explorer le monde en faisant des expéditions virtuelles
+          * Augmenter la motivation des élèves
+          * Sensibiliser les élèves à des aspects culturels
+          * Accès à plus de 900 expéditions
+          * Parce que c'est gratuit!
+        * <img src="framework/img/workshop/expeditions-logo.jpeg" width="400px" alt="Logo d’expéditions">
+      </script>
+    </section>
+
+    <section class="slide two-col-list" data-markdown>
+      <script type="text/template">
+        # Exigences techniques pour Google Expeditions
+
+        * Matériel requis :
+          * Un appareil pour l'enseignante avec l’application Google Expeditions
+          * Des appareils pour les élèves (iPod, iPhone, iPad, téléphone Android, tablette)
+          * Les appareils Chromebook sont aussi compatibles, mais il faut installer l'extension. (À moins qu’il s'agisse d’un Chromebook à écran tactile, les flèches du clavier serviront à naviguer.)
+          * L'application Google Expeditions installée sur tous les appareils, tant celui de l'enseignant que ceux des élèves.
+          * Des visionneuses en carton pour iPod ou iPhone
+          * Une connexion à Internet
+          * <a href="https://support.google.com/edu/expeditions/answer/9161108?hl=en&ref_topic=6334250"> Exigences techniques </a>
+        * <br><img src="framework/img/workshop/TLC-VR-Stockpic.jpg" width="400px" alt="Logo d’Expeditions">
+      </script>
+    </section>
+
+        <section class="slide two-col-list" data-markdown>
+          <script type="text/template">
+            # Google Expeditions
+            * Téléchargez Google Expeditions sur l’App Store
+              * Cherchez Google Expeditions sur Google Play ou l’App Store
+            * <img src="framework/img/workshop/TLC-Google-Ex-QR.png" width="200px" alt="Code QR pour Expeditions">
+
+          </script>
+        </section>
+
+        <section class="slide centered" data-markdown>
+          <script type="text/template">
+            # Premiers pas
+
+            ##Nous visiterons les grandioses parcs nationaux<br> Nord Canadien sur notre appareil.
+            <img src="framework/img/workshop/parcs.jpg" width="400" alt="Expédition dans les grandioses parcs nationaux Nord Canadien">
+
+          </script>
+        </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Premiers pas
+
+        Allez dans l’application Google Expeditions sur votre appareil.
+
+        1. Cliquez sur « Join ».
+        1. Joignez-vous à l’expédition. La formatrice sera le guide (le prof) aujourd'hui. Vous pourrez ainsi faire l'expérience comme si vous étiez un élève.
+
+        <img src="framework/img/workshop/google-exp-join.png" alt="Capture d’écran de la page d'accueil de Google Expeditions">
+
+      </script>
+    </section>
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Liens avec le programme de formation
+        ##Voyons voir quelques objectifs du programme de formation :<br>
+
+        Par exemple : <a href="http://www.edu.gov.on.ca/fre/curriculum/elementary/etudes-sociales-histoire-geographie-2018.pdf">Programme d’études sociales - 4e année (Ontario)</a>
+
+        <img src="framework/img/workshop/4e-annee.png" alt="Capture d’écran du programme pour la 4e année">
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Liste d’expéditions
+        ##Plus de 900 expéditions à découvrir<br>
+
+        <a href="http://bit.ly/2wUL1hJ">Feuille de calcul Google Expeditions - Consultez « Available Translations » (colonne L)</a>
+
+        <img src="framework/img/workshop/TLC-Spreadsheet.png" alt="Capture d’écran de la feuille de calcul d'expéditions">
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Planification de cours
+
+        ##Modèle de plan de cours avec Google Expeditions :
+        En petit groupe, créez une leçon de base faisant appel à Google Expedition.
+        Vous devrez vous connecter pour accéder au modèle.
+
+        <a href="http://bit.ly/2Kl8f9I">Modèle de plan de cours</a>
+
+        <img src="framework/img/workshop/TLC-Lesson-Template.png" alt="Capture d’écran du modèle de plan de cours">
+
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #Ressources pour Google Expeditions
+
+        <a href="http://bit.ly/2MRYNwq">Modèle de plan de cours</a><br>
+        <a href="http://bit.ly/2Kl8f9I">Centre pour les enseignants Google</a><br>
+        <a href="http://bit.ly/2Fbuf2e">Communauté pour enseignants sur Google+</a><br>
+        <a href="http://bit.ly/2XMgChm">Page de soutien Google Expeditions</a><br>
+        <a href="http://bit.ly/2wUL1hJ">Feuille de calcul remplie d'expéditions </a><br>
+
+      </script>
+    </section>
+
+    <section class="slide title" data-toc data-markdown>
+      <script type="text/template">
+        # Programmation pour la réalité virtuelle
+      </script>
+
+    </section>
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Le robot
+
+        <img src="framework/img/workshop/robot.png" width="600px;" alt="Robot">
+
+
+          ---
+        <div class="dropdown">
+          <button class="dropbtn">Attributions</button>
+          <div class="dropdown-content">
+            <a href="https://openclipart.org/detail/191072/blue-robot"> Art vectoriel de robot bleu par Scout</a>
+          </div>
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Réussites
+
+        * Nous avons utilisé des consignes simples et claires pour réaliser une tâche.<!-- .element: class="delayed" -->
+        * Nous avons créé un algorithme (un ensemble d’opérations à suivre étape par étape pour résoudre un problème).<!-- .element: class="delayed" -->
+        * Nous avons appris l’importance des séquences en programmation. Les ordinateurs lisent et exécutent des commandites de haut en bas (l’ordre est important).<!-- .element: class="delayed" -->
+
+      </script>
+    </section>
+
+    <section class="slide title" data-toc data-markdown>
+     <script type="text/template">
+       # Qu'est-ce que le code?
+     </script>
+    </section>
+
+    <section class="slide" data-markdown>
+     <script type= "text/template">
+       #Le code, c'est...
+       ## UN ENSEMBLE DE DIRECTIVES DISANT À L’ORDINATEUR QUOI FAIRE.
+
+       <br>
+       ![Gif de robot qui court gif](framework/img/workshop/runningrobot.gif)
+       ![Gif de robot qui danse](framework/img/workshop/dancingrobot.gif)
+       ![Gif de robot qui mange](framework/img/workshop/eatingrobot.gif)
+       ![Gif de robot qui danse](framework/img/workshop/dancingrobot2.gif)
+       ![Gif de robot qui danse](framework/img/workshop/bluerobot.gif)
+       ![Gif de robot qui danse](framework/img/workshop/partyrobot.gif)
+
+       <p> Dans le langage du code, nous appelons un ensemble d’instructions un <strong style="color:#ffce03;">algorithme</strong>.</p><!-- .element: class="delayed" -->
+
+     </script>
+    </section>
+
+    <section class="slide title" data-toc data-markdown>
+      <script type="text/template">
+        # Pourquoi enseigner la programmation?
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Nous pensons qu’il est important que les jeunes apprennent à programmer pour les raisons suivantes :
+
+        1. La programmation est un super-pouvoir.<!-- .element: class="delayed" -->
+        1. La programmation permet aux jeunes de penser différemment.<!-- .element: class="delayed" -->
+        1. La programmation aide les enfants à comprendre le monde qui les entoure.<!-- .element: class="delayed" -->
+        1. La programmation peut changer le monde.<!-- .element: class="delayed" -->
+        1. La programmation est amusante! <!-- .element: class="delayed" -->
+
+      </script>
+    </section>
+    <section class="slide title" data-toc data-markdown>
+      <script type="text/template">
+        # Outil : CoSpaces
+      </script>
+    </section>
+
+        <section class="slide centered" data-toc data-markdown>
+          <script type="text/template">
+            # Qu'est-ce que CoSpaces?
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KPDWGrUh2dw?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          </script>
+        </section>
+
+        <section class="slide" data-markdown>
+          <script type="text/template">
+            # Pourquoi utiliser CoSpaces?
+
+            * Réalité virtuelle : une source de motivation pour les élèves<!-- .element: class="delayed" -->
+            * Enrichir les cours (p. ex., maths, sciences, langues)<!-- .element: class="delayed" -->
+            * Outil accessible sur le Web (aucun logiciel à installer)<!-- .element: class="delayed" -->
+            * Enseigne la pensée informatique avec de la programmation simple, par blocs<!-- .element: class="delayed" -->
+            * Comptes pour enseignants : permet d’attribuer des activités aux élèves et de suivre leur progrès<!-- .element: class="delayed" -->
+            * Compte gratuit : maximum de 29 élèves, 1 enseignante<!-- .element: class="delayed" -->
+            * Fait appel à la créativité et à l’imagination des élèves<!-- .element: class="delayed" -->
+            * Aide les élèves à passer de simples consommateurs à des créateurs de technologie<!-- .element: class="delayed" -->
+            * <img src="framework/img/workshop/TLC-cardboard.jpg" width="400px" alt="Visionneuse CoSpaces"><!-- .element: class="delayed" -->
+          </script>
+        </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #Programmer avec CoSpaces EDU
+
+        * Créez un compte sur CoSpaces Edu (« Sign Up » en haut à droite)
+          * Site Web de CoSpaces : <a href="https://cospaces.io/edu/">https://cospaces.io/edu/</a>
+
+        <img src="framework/img/workshop/TLC-CSmain.png" alt="Page d'accueil de CoSpaces">
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #Connectez-vous à CoSpaces EDU
+
+        * Utilisez une adresse courriel pour vous inscrire.
+        * Les élèves pourront se connecter au site avec des comptes d’élève.
+
+        <img src="framework/img/workshop/TLC-LoginCS.png" alt="Connexion à CoSpaces">
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #Joignez-vous à la classe
+
+        * Sélectionnez « Student » dans le menu et joignez-vous à la classe avec le <strong>code fourni par la formatrice</strong>.
+        * Aujourd’hui, nous utiliserons la version gratuite.
+
+        <img src="framework/img/workshop/student-join.png" alt="Se connecter à CoSpaces">
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #Fonctionnalités de la version gratuite
+
+        <img src="framework/img/workshop/cospaces-features-fr.png" alt="La version gratuite de base de Cospaces Edu permet à 29 élèves de participer. Inscrivez-vous pour : (1) Inviter jusqu’à 29 élèves, (2) Créer jusqu’à 2 Cospaces, (3) Créer 1 classe, (4) Créer 1 travail, (5) Téléverser jusqu’à 10 fichiers externes, (6) Programmer avec des CoBlocks de base. ">
+
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #Fonctionnalités de la version pro
+
+        * Vous pouvez essayer la version pro gratuitement pendant 30 jours.
+        * Allez sur la page <a href="https://cospaces.io/edu/ambassadors.html">CoSpaces Ambassador</a> et envoyez-leur un message (en anglais) pour obtenir un code d'essai gratuit.
+        * Lorsque l'essai gratuit sera terminé, les environnements que vous aurez créés avec la version pro seront verrouillés. Toutefois, vous pourrez les afficher.
+        
+        <img src="framework/img/workshop/cospaces-pro-fr.png" alt="Si vous souhaitez acheter la version pro, choisissez la version qui vous intéresse (selon le nombre de places). Les places peuvent être occupées par des élèves ou par des enseignants. (1) Créez avec toutes les fonctionnalités offertes par CoSpaces Edu, (2) Choisissez le nombre de places dont vous avez besoin,  (3) Partagez votre compte pro avec d’autres enseignants, (4) Stockez des CoSpaces et des classes, (5) Publiez vos créations dans la galerie de CoSpaces Edu, (6) Remixez des CoSpaces de la galerie, (7) Programmez avec tous les CoBlocks ou les langages de programmation, (8) Utilisez le moteur physique intégré, (9) Ajoutez des extensions pour accéder à d’autres fonctionnalités.">
+      </script>
+    </section>
+
+    <section class="slide title" data-toc data-markdown>
+      <script type="text/template">
+        # Projet de programmation en groupe : Recréer une fable
+      </script>
+    </section>
+    <section class="slide centered" data-toc data-markdown>
+      <script type="text/template">
+        # Le lion et le rat
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xkm5j4JYmkc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+        <a href="https://cospac.es/8b6M" >Exemple de projet CoSpaces</a>
+
+        <!--Replace link to FR project-->
+
+        <!--Texte du projet CoSpaces :
+        Tu m'as réveillé!
+        Excuse-moi monsieur le lion! Ne me fais pas mal! Laisse-moi partir!
+        D'accord.
+        Aide-moi!
+        Ok.
+        Merci.
+        Fin.
+        La morale de l’histoire : toute générosité est récompensée. La grandeur n'a rien à voir avec les capacités et le cœur d'une personne. On peut tous régler des problèmes malgré les apparences.-->
+
+      </script>
+    </section>
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #Commencer à créer
+        * Cliquez sur « My Spaces » en haut à gauche de l’écran.
+        * Sélectionnez « Create space ».
+
+        <img src="framework/img/workshop/TLC-MySpaceCS.png" alt="CoSpaces, My Space">
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #Types de scènes
+        * Cliquez sur l’option « 3D Environment » pour créer votre premier environnement de réalité virtuelle.
+
+        <img src="framework/img/workshop/TLC-SceneCS.png" alt="CoSpaces, type de scène">
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #Explorer les menus de CoSpace
+        * Créez un environnement de RV à partir d’une toile vierge.
+        * Les fonctionnalités du menu vous permettront de personnaliser votre projet.
+
+        <img src="framework/img/workshop/TLC-CSMenu.png" alt="Menu de CoSpaces">
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #N° 1. Sélectionner un environnement
+        * Cliquez sur le menu « Environment » en bas à gauche de l’écran.
+        * Sélectionnez la scène forêt tropicale (rainforest).
+
+        <img src="framework/img/workshop/TLC-EnvironmentCS.png" alt="Menu CoSpaces, sélection de l'environnement">
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #N° 2. Ajouter des personnages
+        * Cliquez sur le menu « Library » en bas à gauche de l’écran pour accéder à la bibliothèque.
+        * Cliquez sur « Animals ».
+        * Sélectionnez le rat et glissez-le dans la scène.
+        * Glissez le lion dans la scène.
+        * Cliquez sur « Nature » et glissez des éléments supplémentaires pour compléter le décor de la forêt tropicale.
+
+        <img src="framework/img/workshop/TLC-RainforestCS.png" alt="Menu CoSpaces, forêt tropicale">
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #N° 3. Personnaliser les personnages
+        * Faites un clic droit sur l’un des personnages pour afficher le menu.
+        * Pour le lion, sélectionnez « Animation » et choisissez l’option « ROAR ».
+        * Sélectionnez le rat et choisissez l’option d’animation « RUN ».
+
+        <img src="framework/img/workshop/TLC-LionCS.png" alt="Menu CoSpaces, lion">
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #N° 4. Placer les personnages
+        * Faites un clic simple sur les personnages pour les déplacer, les redimensionner et les réorienter.
+        * Prenez quelques instants pour bien placer vos personnages et les redimensionner.
+        * Conseil : utilisez le bouton « Snapping » sur le menu en haut à gauche pour mettre une grille dans l'espace.
+        * Utilisez la grille pour bien placer vos animaux et vos objets sur l’écran.
+        * Nous voulons que le rat dépasse le lion en courant. Alors, assurez-vous de bien définir l’orientation et le chemin du rat afin qu'il puisse dépasser le lion.
+
+        <img src="framework/img/workshop/TLC-MouseCS.png" alt="Menu CoSpaces, rat">
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #N° 5. Programmer
+        * D’abord, activez la programmation pour chaque personnage.
+        * Sélectionnez le bouton « Code » dans le menu qui s'affiche lorsque vous faites un clic droit.
+        * Mettez l'option Use in CoBlocks au bleu.
+
+        <img src="framework/img/workshop/TLC-LionCode.png" alt="Menu CoBlocks, lion">
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #N° 6. Programmation avec des CoBlocks <img src="framework/img/workshop/TLC-CodeButton.png" alt="Écran du code, CoSpaces">
+        1. Sélectionnez le bouton « Code » en haut à droite de l’écran.
+        1. Déplacez les CoBlocks à droite pour programmer les personnages.
+        1. Pour effacer les blocs, glissez les blocs sélectionnés à gauche.
+
+        <img src="framework/img/workshop/TLC-Blocks1.png" alt="Fenêtre divisée, blocs CoSpaces">
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #N° 7. CoBlocks
+        * Le menu à gauche décrit la fonction des blocs.
+        * Déplacez les CoBlocks à droite et associez le code aux personnages à l'aide du menu déroulant.
+        * Utilisez quelques blocs pour faire courir le rat sous le lion.
+        * Vous devrez peut-être changer l’orientation du rat et jouer avec les variables dans les menus déroulants.
+        * Passez du mode « EDIT » (modification) pour modifier votre code au mode « PLAY » (lecture) pour lire, essayer et déboguer votre code.
+
+        <img src="framework/img/workshop/mouse-blocks.png" alt="Programmer avec des blocs sur CoSpaces">
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #N° 8. Afficher le projet
+        * Sélectionnez le bouton « Play » en haut à droite.
+        * Cliquez sur les boutons « Code » et « Play » pour déboguer votre scène.
+        <img src="framework/img/workshop/TLC-PlayButton.png" alt="Jouer et afficher le projet CoSpaces">
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #N° 9. Vue de la caméra
+        * Utilisez la flèche en haut à gauche pour revenir au mode « EDIT » pour modifier le projet.
+        * Vous verrez une caméra bleue sur votre écran.
+        * La caméra montre le point de vue du spectateur qui affiche votre CoSpace.
+        * Vous pouvez régler la caméra en cliquant et en modifiant l’orientation de la vue afin de montrer le rat qui court sous le lion.
+
+        <img src="framework/img/workshop/TLC-Camera.png" alt="Vue de la caméra CoSpaces">
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #N° 10. Son
+        * Ajoutez du son à votre scène.
+        * Vous avez deux options : enregistrer un son ou téléverser un son.
+          * Consultez les diapositives suivantes pour savoir comment téléverser un son.
+          * Enregistrer un son : Trouvez un son de rugissement sur YouTube et faites jouer la vidéo sur votre téléphone.
+          * Vidéo YouTube : https://youtu.be/8StqowT8hME
+
+        <img src="framework/img/workshop/sound-options.png" alt="Téléverser un son sur CoSpaces">
+        <br>
+
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #N° 11. Télécharger un son
+        * Ouvrez une nouvelle fenêtre et allez sur le site <a href="http://soundbible.com/">SoundBible</a>.
+        * Cherchez un son de rugissement de lion (essayez « lion roar »).
+        * Cliquez sur l’icône .WAV pour télécharger le son.
+
+        <img src="framework/img/workshop/roar-download.png" alt="SoundBible">
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #N° 12. Téléverser des sons sur CoSpaces
+        * Dans le menu du bas, cliquez sur le bouton « Upload » (entre « Library » et « Environment »).
+        * Cliquez sur l'icône « Upload » et sélectionnez le fichier du son de lion de SoundBible sur votre ordinateur pour le téléverser.
+
+        <img src="framework/img/workshop/TLC-SoundRoar.png" alt="Téléverser un son sur CoSpaces">
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #N° 13. Ajouter le CoBlock de son
+        * Trouvez le bloc d'action « Play Sound » pour jouer un son.
+        * Utilisez la flèche vers le bas pour sélectionner le nom de fichier du .WAV de lion.
+        * Sélectionnez « Wait until finished » et mettez l'option à « true ».
+        <img src="framework/img/workshop/TLC-ActionSound.png" alt="Bloc de son CoSpaces">
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #N° 14. Faire tourner le rat
+        * Trouvez le bloc de transformation « Turn ».
+        * Sélectionnez le rat dans le menu déroulant.
+        * Faites tourner le rat afin qu’il regarde le lion après le rugissement.
+
+        <img src="framework/img/workshop/TLC-MouseTurn.png" alt="Bloc de transformation CoSpaces">
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #N° 15. Faire parler le lion
+        * Trouvez le bloc d'action qui permettra de faire parler le lion.
+        * Faites dire « Bonjour » au rat en tapant le mot dans les guillemets.
+        * Ajoutez un autre bloc afin que le rat réponde au lion.
+        * Poursuivez la conversation en ajoutant des paroles et du mouvement pour finir la scène.
+
+        <img src="framework/img/workshop/TLC-LionTalk.png" alt="Bloc de parole CoSpaces">
+      </script>
+    </section>
+
+    <section class="slide title" data-toc data-markdown>
+      <script type="text/template">
+        # Programmation individuelle
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        # Explorer CoSpaces
+        * Ajoutez du dialogue.
+        * Ajoutez des transitions entre les animaux.
+        * Ajoutez d’autres objets.
+        * Défi : téléversez et programmez une cage en 3D.
+        * Conseil : cherchez dans le menu « UPLOAD » et cliquez sur « 3D Models ».
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        # Publier et afficher le projet
+        * Cliquez sur le bouton « Share » en haut à droite de l’écran.
+        * Cliquez sur « Share now ».
+
+        <img src="framework/img/workshop/TLC-Share.png" alt="Écran de partage CoSpaces">
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        # Option de remix
+        * Dans la version pro de CoSpaces, vous pouvez remixer des projets de la galerie.
+
+        <img src="framework/img/workshop/TLC-Share3.png" alt="Écran de partage CoSpaces">
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        # Modifier ou partager un projet
+        * Dans cet écran, vous pouvez jouer, modifier ou partager un projet.
+
+        <img src="framework/img/workshop/TLC-PlayProject.png" alt="Écran de partage CoSpaces">
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        # Code QR
+        * CoSpaces offre un lien ou un code QR qui vous permettra de partager vos projets.
+
+        <img src="framework/img/workshop/share-link.png" alt="Icône de partage">
+
+        <img src="framework/img/workshop/share-qr.png" alt="Écran de partage CoSpaces">
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        # Visionneuses de réalité virtuelle
+
+        * Ouvrez l’application CoSpaces sur votre appareil et cherchez votre projet.
+          * Vous pouvez aussi accéder à votre projet avec le code QR.
+        * Cliquez sur « Open » dans CoSpaces Edu.
+        * Cliquez sur « Play ».
+        * Cliquez sur les lunettes en bas à droite de l’écran.
+        * Option : Affichez votre environnement CoSpace dans le mode gyroscope et orientez votre appareil vers le haut, le bas, la droite et la gauche pour changer le point de vue.
+
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #Explorer la galerie
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        # Explorer la galerie
+        * Cliquez sur le bouton « Home » en haut à gauche de l’écran.
+        * Cliquez sur « Gallery ».
+
+        <img src="framework/img/workshop/TLC-GalleryCS.png" alt="Menu de la gaerie CoSpaces">
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        # L'Histoire de Pi par Yann Martel
+        * Voici un exemple d'application dans un cours de langues. Les élèves peuvent recréer une scène d’un livre qu’ils ont lu.
+
+        <img src="framework/img/workshop/QR1.png" alt="Menu de la galerie CoSpaces">
+      </script>
+    </section>
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        # Explorer la galerie
+        * Voici un autre exemple d'application dans un cours de langues. Il s'agit d’un graphique inspiré de Sa Majesté des mouches.
+
+        <img src="framework/img/workshop/QR2.png" alt="Menu de la galerie CoSpaces">
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #Ressources
+
+      </script>
+    </section>
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        # Ressources supplémentaires (en anglais)
+
+         * Premiers pas avec CoSpaces Edu en classe (<a href="http://bit.ly/2XerJ5U">Guide de l'enseignant</a>)
+         * Guide de référence CoSpaces (<a href="https://cospaces.io/edu/CoBlocks-Reference-Guide.pdf">Guide CoBlocks</a>)
+         * Chaîne YouTube CoSpaces (<a href="http://bit.ly/2wWRetC">Tutoriels</a>)
+         * Leçons CoSpaces (<a href="http://bit.ly/2Zmy24y">Exemples</a>)
+         * CoSpaces sur Facebook (<a href="http://bit.ly/2WHzeOf">Participez aux discussions</a>)
+
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        # Réussites
+
+        * Nous avons créé un environnement 3D avec le code.<!-- .element: class="delayed" -->
+        * Nous avons donné des consignes à l’ordinateur pour exécuter une tâche.<!-- .element: class="delayed" -->
+        * Nous avons utilisé le code pour faire bouger des personnages dans la scène.<!-- .element: class="delayed" -->
+        * Nous avons essayé et débogué notre code pour améliorer nos projets.<!-- .element: class="delayed" -->
+      </script>
+    </section>
+
+    <section class="slide title" data-toc data-markdown>
+      <script type="text/template">
+        # Partagez et discutez
+        ## 3 éléments que vous avez appris
+        ## 2 liens avec le programme de formation
+        ## 1 élément à retenir
+      </script>
+    </section>
+
+    <section class="slide title" data-toc data-markdown>
+      <script type="text/template">
+        # Évaluation
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        # Questions d’évaluation
+
+        1. L’évaluation portera-t-elle sur la démarche (formative), le produit (sommative) ou les deux?
+        1. Les critères d’évaluation seront-ils déterminés par les élèves, les enseignants ou les deux?
+        1. Qui réalisera l’évaluation? Les élèves, les enseignants ou les deux?
+
+        <em>Discutez en petits groupes et utilisez un projet réalisé aujourd'hui comme exemple.</em>
+
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        # Comment évaluer les apprentissages dans CoSpaces?
+
+        * <strong style="color:#ffce03;">MÉTHODES</strong>
+          * Se concentrer sur le processus (réflexion + discussion)
+          * L’évaluation comme moyen d’apprentissage
+          * Critères de réussite définis en collaboration
+          * Les 5 « C » : Communication, Collaboration, Créativité, pensée Critique, Conception.
+          * Grille d’évaluation : pensée informatique (http://bit.ly/CTrubric)
+
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        # Grille d’évaluation à critère simple
+        * Créez une grille d’évaluation à critère simple pour un projet de fable créé sur CoSpaces.
+        * Enregistrez une copie du <a href="https://docs.google.com/document/d/17UWe1icshozOeWYIOtLAvEgp5DyFMiU9qSmEpr7bBMw/copy">modèle de grille d’évaluation à critère simple</a>.
+
+        <img src="framework/img/workshop/TLC-Rubric.png" alt="Grille d’évaluation CoSpaces">
+      </script>
+    </section>
+
+    <section class="slide title" data-toc data-markdown>
+      <script type="text/template">
+        #Planification de cours avec CoSpaces
+        ##Prolongement
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #Prochaines étapes
+        ##Nous changerons le monde, une leçon de programmation à la fois.
+
+        Voici quelques idées :
+
+        * Créez un <a href="https://cospaces.io/edu/">compte pour enseignant sur CoSpaces</a>.
+        * Intégrez une activité hors ligne à votre planification hebdomadaire.
+        * Consacrez une journée de la semaine à la programmation. Par exemple, faites un « mardi programmation ».
+        * Partagez vos leçons de programmation avec la communauté d’Enseignants en programmation (<a href="mailto:content@canadalearningcode.ca">envoyez-nous un courriel!</a>).
+        * Réservez une <a href="http://codemobile.rocks">visite de la Code Mobile</a> pour votre classe, soit pour organiser une leçon ou vous aider dans votre enseignement.
+
+      </script>
+    </section>
+
+    <section class="slide centered" data-toc data-markdown>
+      <script type="text/template">
+        # Écrivez votre prochaine étape sur un papillon adhésif
+
+        <img src="framework/img/workshop/postit.jpg" width="400px" alt="Papillons adhésifs sur un mur">
+      </script>
+    </section>
+
+    <main>
+      <section class="slide" data-toc data-markdown>
+        <script type="text/template">
+          # Aujourd'hui, je sais que...
+
+          <p><strong>Je peux</strong> enseigner la pensée informatique sans technologie.</p><!-- .element: class="delayed" -->
+          <p><strong>Je peux</strong> enseigner la programmation de manière amusante pour les jeunes.</p><!-- .element: class="delayed" -->
+          <p><strong>Je peux</strong> commencer à enseigner avec la technologie, à mon rythme.</p><!-- .element: class="delayed" -->
+          <p><strong>Je peux</strong> enseigner avec la technologie dès maintenant.</p><!-- .element: class="delayed" -->
+          <p><strong>Je peux</strong> y arriver!</p><!-- .element: class="delayed" -->
+
+        </script>
+      </section>
+
+
+    <!-- Dernière diapositive -->
+    <section class="slide last">
+      <h1>Merci!</h1>
+      <h2 class="heading-bg">
+        <span>La réalité virtuelle pour les <br>enseignants</span>
+      </h2>
+
+      <ul>
+        <li><a href="http://twitter.com/learningcode">@learningcode</a></li>
+        <li><a href="https://twitter.com/search?q=%23teacherslearningcode&src=typd">#teacherslearningcode</a></li>
+      </ul>
+
+
+  </main><!-- cls main section -->
+
+  <script src="framework/scripts/jquery-1.11.0.min.js"></script>
+  <script src="framework/scripts/slideshow.js"></script>
+
+  <!-- Enlevez les commentaires des modules dont vous avez besoin -->
+  <script src="framework/scripts/plugins/css-edit.js"></script>
+  <script src="framework/scripts/plugins/css-snippets.js"></script>
+  <script src="framework/scripts/plugins/css-controls.js"></script>
+  <!-- <script src="plugins/code-highlight.js"></script>-->
+
+  <script src="framework/scripts/plugins/markdown/marked.js"></script>
+  <script src="framework/scripts/plugins/markdown/markdown.js"></script>
+  <script src="framework/scripts/plugins/highlight/highlight-8.4.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="framework/scripts/tlc.js"></script>
+  <script>
+    var slideshow = new SlideShow();
+
+    // Regroupe tous les éléments .snippet
+    var snippets = document.querySelectorAll('.snippet');
+    for(var i=0; i<snippets.length; i++) {
+      new CSSSnippet(snippets[i]);
+    }
+  </script>
+
+</body>
+</html>

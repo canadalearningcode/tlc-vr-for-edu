@@ -48,7 +48,7 @@ Obtenez plus d'informations sur les thèmes mensuels en [cliquant ici](https://w
 Consultez la diapositive n° 5 pour obtenir des suggestions pour intégrer le thème aux projets des apprenants, s'ils souhaitent participer au thème.
 
 # Enseignants en programmation
-# Scratch pour les enseignants
+# La réalité virtuelle pour les enseignants
 
 ## Liens rapides
 
